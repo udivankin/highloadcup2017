@@ -1,0 +1,20 @@
+{
+  "name": "highloadcup",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node --expose-gc index.js 8080",
+    "start": "docker run --rm -p 8080:80 -t -i dumb",
+    "build": "docker build -t dumb .",
+    "docker": "docker build -t dumb .; docker tag dumb stor.highloadcup.ru/travels/plain_chinook; docker push stor.highloadcup.ru/travels/plain_chinook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://udivankin@bitbucket.org/udivankin/highloadcup.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/udivankin/highloadcup#readme"
+}
